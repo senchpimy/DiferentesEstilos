@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
+	    "io/ioutil"
 	"net/http"
 	"strings"
 )
@@ -16,11 +17,16 @@ func main() {
 		path := r.URL.Path
 		if strings.HasSuffix(path,".css"){
 			w.Header().Set("Content-Type", "text/css")
-			html:=request(path)
-			fmt.Fprint(w,html)
-		}
+			data, err := ioutil.ReadFile("style.css")
+			if err != nil {
+			    fmt.Println(err)
+			}
+			style:=string(data)
+			fmt.Fprint(w,style)
+		}else{
 		html:=request(path)
 		fmt.Fprint(w,html)
+		}
 	})
 
         http.ListenAndServe(":3000", nil)
@@ -30,13 +36,11 @@ func main() {
 	resp, err := http.Get(domain+url)
 	if err != nil {
 		fmt.Println("erro get")
-	    // handle error
 	}
 	defer resp.Body.Close()
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		fmt.Println("erro read")
-	    // handle error
 	}
 	return string(body)
  }

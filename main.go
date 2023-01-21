@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
-	    "io/ioutil"
+	"io/ioutil"
 	"net/http"
 	"strings"
 )
@@ -15,13 +15,11 @@ func main() {
         http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		path := r.URL.Path
 		if strings.HasSuffix(path,".css"){
-			w.Header().Set("Content-Type", "text/css")
-			data, err := ioutil.ReadFile("style.css")
-			if err != nil {
-			    fmt.Println(err)
+			if path=="/ascci/style.css"{
+				provide_style(w,"style_ascci.css")
+			}else{
+				provide_style(w,"style.css")
 			}
-			style:=string(data)
-			fmt.Fprint(w,style)
 		}else if strings.HasSuffix(path,".html") || path=="/"{
 			html:=request(path)
 			fmt.Fprint(w,html+"<meta name='viewport' content='width=device-widht, initial-scale=1.0'>")
@@ -30,7 +28,6 @@ func main() {
 			fmt.Fprint(w,html)
 		}
 	})
-	fmt.Println("Server Start")
 
         http.ListenAndServe(":3002", nil)
 }
@@ -46,4 +43,14 @@ func main() {
 		fmt.Println("erro read")
 	}
 	return string(body)
+ }
+
+ func provide_style(w http.ResponseWriter,style_path string){
+	w.Header().Set("Content-Type", "text/css")
+	data, err := ioutil.ReadFile(style_path)
+	if err != nil {
+	    fmt.Println(err)
+	}
+	style:=string(data)
+	fmt.Fprint(w,style)
  }

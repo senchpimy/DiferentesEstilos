@@ -1,0 +1,375 @@
+#oldlogo{
+	font-family: monospace;
+	font-size: 3px;
+	justify-content: center;
+	text-align: center;
+	margin:auto;
+	white-space: pre;
+}
+
+.kaomoji{
+    color: seashell;
+    font-size: 15px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap; 
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+.grid{
+    --gap: 10px;
+    --num-cols: 4;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 5;
+}
+
+#david{
+    color: seashell;
+	font-family: monospace;
+	font-size: 3px;
+	justify-content: center;
+	text-align: center;
+	margin:auto;
+	white-space: pre;
+}
+
+#dred{
+    color: seashell;
+font-family: monospace;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+}
+
+#hitman{
+font-family: monospace;
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#shiva{
+font-family: monospace;
+    color: seashell;
+    font-size: 5px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#wormhole{
+    color: seashell;
+    font-size: 12px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+font-family: monospace;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#computer{
+    color: seashell;
+    font-size: 8px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+font-family: monospace;
+    margin: 10px;
+}
+
+#troll{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+font-family: monospace;
+    text-align:left;
+    white-space: pre-wrap; 
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#joker{
+    color: seashell;
+    font-size: 10px;
+font-family: monospace;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;   
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#breakingbad{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;   
+    width: fit-content;
+font-family: monospace;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+#son{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;   
+    width: fit-content;
+font-family: monospace;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}  
+
+#oil{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;  
+    width: fit-content;
+    height: fit-content;
+font-family: monospace;
+    margin: 10px;
+    float: inline-end;
+
+}
+
+#handsome{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;   
+    width: fit-content;
+    height: fit-content;
+font-family: monospace;
+    float: inline-start;
+    margin: 10px;
+}
+
+#xina{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+font-family: monospace;
+    text-align:left;
+    white-space: pre-wrap;   
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+#chad{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+font-family: monospace;
+    width: fit-content;
+    height: fit-content;
+    float: inline-end;
+    margin: 10px;
+}
+#wojack{
+    color: seashell;
+    font-size: 9px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+font-family: monospace;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+#today{
+    color: seashell;
+    font-size: 16px;
+    margin: 2px;
+font-family: monospace;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+#nagatoro{
+    color: seashell;
+    font-size: 9px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+font-family: monospace;
+    width: fit-content;
+    height: fit-content;
+    float: inline-end;
+    margin: 10px;
+}
+#shroomjack{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+font-family: monospace;
+    margin: 10px;
+}
+#morfeo{
+    color: seashell;
+    font-size: 9px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+font-family: monospace;
+    margin: 10px;
+}
+#crowley{
+    color: seashell;
+    font-size: 9px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+font-family: monospace;
+    float: inline-end;
+    margin: 10px;
+}
+#bog{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+font-family: monospace;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+#nerv{
+    color: seashell;
+    font-size: 10px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+font-family: monospace;
+    float: inline-start;
+    margin: 10px;
+}
+
+#woman{
+    color: seashell;
+    font-size: 5px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+font-family: monospace;
+    float: inline-end;
+    margin: 10px;
+}
+#lain{
+    color: seashell;
+    font-size: 5px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+font-family: monospace;
+}
+#rei{
+    color: seashell;
+    font-size: 5px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;  
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+font-family: monospace;
+    margin: 10px;
+}
+#lain2{
+    color: rgb(255, 255, 255);
+    font-size: 1px;
+    margin: 0px;
+    text-align:left;
+    white-space: pre-wrap;  
+    width: fit-content;
+font-family: monospace;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+
+
+#rosa{
+    color: seashell;
+    font-size: 2px;
+    margin: 2px;
+font-family: monospace;
+    text-align:left;
+    white-space: pre-wrap;  
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+    margin: 10px;
+}
+#girl{
+    color: seashell;
+    font-size: 6px;
+    margin: 2px;
+    text-align:left;
+    white-space: pre-wrap;  
+    width: fit-content;
+    height: fit-content;
+    float: inline-start;
+font-family: monospace;
+}
+

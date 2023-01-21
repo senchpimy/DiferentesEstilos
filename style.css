@@ -4,7 +4,7 @@ body { /*celulares*/
 	background-color:#090f11;
 	margin: 0;
 }
-h1{
+.title{
 	font-family: monospace;
 	font-size: 5px;
 	animation-name: appear-title;
@@ -46,6 +46,30 @@ a:visited {
 .contenidos a:hover {
 	color:orange;
 	background-color:orange;
+}
+p.texto {
+	text-align:center;
+	color:#074374;
+	font-size:20px;
+}
+.conatiner {
+  padding-left: 10%;
+  max-width: 300px;
+}
+
+.conatiner > li {
+list-style: none
+}
+
+.conatiner > li > a{
+	color:#4c42d8;
+ 	text-decoration: none;
+}
+
+li + li {
+border-top: 2px solid rgba(255,255,255,0.2);
+margin-bottom: 10px;
+margin-top:10px;
 }
 
 @media only screen and (min-width:768px){ /*tablets*/

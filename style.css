@@ -1,3 +1,83 @@
+body { /*celulares*/
+	font-family:'roboto',sans-serif;
+	color:#c8aef5;
+	background-color:#090f11;
+	margin: 0;
+}
+h1{
+	font-family: monospace;
+	font-size: 5px;
+	animation-name: appear-title;
+	animation-duration: 5s;
+	justify-content: center;
+	text-align: center;
+	margin:auto;
+	white-space: pre;
+}
+.contenidos {
+    --gap: 1px;
+    --num-cols: 4;
+    /*box-sizing: border-box;*/
+	animation-name: appear-title;
+	animation-duration: 5s;
+	background-color:#1d2229;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    gap: var(--gap);
+    align-items: center;
+    margin:0px;
+    padding-top: 8px;
+}
+a:visited { 
+ text-decoration: none;
+ color:#0f4084;
+ }
+.contenidos a {
+  display: block;
+  text-align: center; 
+  text-decoration: none;
+  margin-bottom: 8px;
+  background-color: none;
+  font-weight: bold;
+  margin-left: 2px;
+  margin-right: 2px;
+ color:#0f4084;
+}
+.contenidos a:hover {
+	color:orange;
+	background-color:orange;
+}
+
+@media only screen and (min-width:768px){ /*tablets*/
 body {
-color:blue;
+	color:red;
+}
+
+}
+
+@media only screen and (min-width:900px){ /*compus*/
+body {
+	color:green;
+}
+
+}
+
+@keyframes appear-title {
+	from {
+	opacity: 0%; 
+	margin-bottom: 500px;
+}
+	to { 
+	opacity: 100%;
+	margin-bottom:0px;
+}
+}
+
+@keyframes appear-content {
+	from {
+	opacity: 0%; 
+}
+	to { 
+	opacity: 100%;
+}
 }

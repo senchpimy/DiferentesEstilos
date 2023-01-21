@@ -13,7 +13,6 @@ const domain = "https://senchpimy.xyz"
 func main() {
 	fmt.Println("Server Start")
         http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		//fmt.Fprint(w,request("/"))
 		path := r.URL.Path
 		if strings.HasSuffix(path,".css"){
 			w.Header().Set("Content-Type", "text/css")
@@ -23,13 +22,17 @@ func main() {
 			}
 			style:=string(data)
 			fmt.Fprint(w,style)
+		}else if strings.HasSuffix(path,".html") || path=="/"{
+			html:=request(path)
+			fmt.Fprint(w,html+"<meta name='viewport' content='width=device-widht, initial-scale=1.0'>")
 		}else{
-		html:=request(path)
-		fmt.Fprint(w,html)
+			html:=request(path)
+			fmt.Fprint(w,html)
 		}
 	})
+	fmt.Println("Server Start")
 
-        http.ListenAndServe(":3000", nil)
+        http.ListenAndServe(":3002", nil)
 }
 
  func request(url string)(foo string){

@@ -93,6 +93,7 @@ margin-top:10px;
 	 width: auto;
 }
 .desc{
+font-size:20px;
   display: block;
   text-align: center; 
   padding: 10px;
@@ -106,6 +107,7 @@ margin-top:10px;
 
  .desc_pend{
 	color:coral;
+	font-size:20px;
 	padding: 10px;
  }
  .image-grid{
@@ -120,6 +122,24 @@ margin-top:10px;
 	border-radius: 5px;
  }
 
+ .codigo{
+	 margin: 10px;
+	background-color:#2b3333;
+	font-size:10px;
+	height: fit-content;
+	color: #287874;
+	white-space: pre-wrap;
+ }
+.video{
+    margin: 0 auto;
+    width:320px;
+    position: relative;
+    margin:auto;
+    border:none;
+}
+#imagenes > img{
+	width: 330px;
+}
 @media only screen and (min-width:768px){ /*tablets*/
 body {
 	color:red;

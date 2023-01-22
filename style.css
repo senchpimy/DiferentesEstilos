@@ -26,7 +26,6 @@ body { /*celulares*/
     gap: var(--gap);
     align-items: center;
     margin:0px;
-    padding-top: 8px;
 }
 a:visited { 
  text-decoration: none;
@@ -36,7 +35,6 @@ a:visited {
   display: block;
   text-align: center; 
   text-decoration: none;
-  margin-bottom: 8px;
   background-color: none;
   font-weight: bold;
   margin-left: 2px;
@@ -154,7 +152,6 @@ font-size:20px;
 	 height: fit-content;
 }
 .title{
-	font-family: monospace;
 	font-size: 9px;
 }
  .img{
@@ -178,12 +175,65 @@ justify-content: flex-start;
 }
 
 @media only screen and (min-width:900px){ /*compus*/
-body {
-	color:green;
+	body{
+	font-size:15px;
+	}
+.title{
+	font-size: 20px;
+}
+h1{
+	font-size:80px;
+}
+.contenidos>a{
+font-size:50px;
 }
 .contenidos a:hover {
-	color:orange;
 	background-color:orange;
+}
+
+p.texto {
+	font-size:40px;
+}
+.conatiner > li > a{
+	font-size:40px;
+}
+.conatiner >li:hover {
+	background-color:orange;
+}
+.documentos > div {
+	height: auto;
+  	border-radius: 20px;
+	background-color:none;
+    	margin: 0 auto;
+	margin-bottom: 10px;
+  	text-align: center; 
+	 width: auto;
+	 padding: 5px;
+}
+
+.desc{
+display: none;
+}
+.desc_pend{
+display: none;
+}
+.desc:hover{
+display: block;
+}
+.documentos > div:hover {
+	 width: 500px;
+
+}
+.documentos > div>a>img {
+	 width: 500px;
+}
+
+.documentos > div:hover >.desc_pend{
+	display: block;
+}
+
+.documentos > div:hover >.desc{
+	display: block;
 }
 
 }
